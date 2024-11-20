@@ -19,7 +19,7 @@ fun MyConstraintLayout()
     {
         val (blackBox, cyanBox1, cyanBox2, cyanBox3, cyanBox4, purpleBox1, purpleBox2, purpleBox3, purpleBox4) = createRefs()
 
-        Box(modifier = Modifier.size(30.dp)
+        Box(modifier = Modifier.size(40.dp)
             .background(Color.Black)
             .constrainAs(ref = blackBox)
             {
@@ -29,7 +29,7 @@ fun MyConstraintLayout()
                 bottom.linkTo(parent.bottom)
             })
 
-        Box(modifier = Modifier.size(30.dp)
+        Box(modifier = Modifier.size(40.dp)
             .background(Teal)
             .constrainAs(ref = cyanBox1)
             {
@@ -37,7 +37,7 @@ fun MyConstraintLayout()
                 end.linkTo(blackBox.start)
             })
 
-        Box(modifier = Modifier.size(30.dp)
+        Box(modifier = Modifier.size(40.dp)
             .background(Teal)
             .constrainAs(ref = cyanBox2)
             {
@@ -45,7 +45,7 @@ fun MyConstraintLayout()
                 start.linkTo(blackBox.end)
             })
 
-        Box(modifier = Modifier.size(30.dp)
+        Box(modifier = Modifier.size(40.dp)
             .background(Teal)
             .constrainAs(ref = cyanBox3)
             {
@@ -53,7 +53,7 @@ fun MyConstraintLayout()
                 end.linkTo(blackBox.start)
             })
 
-        Box(modifier = Modifier.size(30.dp)
+        Box(modifier = Modifier.size(40.dp)
             .background(Teal)
             .constrainAs(ref = cyanBox4)
             {
@@ -61,7 +61,7 @@ fun MyConstraintLayout()
                 start.linkTo(blackBox.end)
             })
 
-        Box(modifier = Modifier.size(30.dp)
+        Box(modifier = Modifier.size(40.dp)
             .background(Purple)
             .constrainAs(ref = purpleBox1)
             {
@@ -69,7 +69,7 @@ fun MyConstraintLayout()
                 start.linkTo(cyanBox1.end)
             })
 
-        Box(modifier = Modifier.size(30.dp)
+        Box(modifier = Modifier.size(40.dp)
             .background(Purple)
             .constrainAs(ref = purpleBox2)
             {
@@ -77,7 +77,7 @@ fun MyConstraintLayout()
                 end.linkTo(cyanBox3.start)
             })
 
-        Box(modifier = Modifier.size(30.dp)
+        Box(modifier = Modifier.size(40.dp)
             .background(Purple)
             .constrainAs(ref = purpleBox3)
             {
@@ -85,7 +85,7 @@ fun MyConstraintLayout()
                 start.linkTo(cyanBox3.end)
             })
 
-        Box(modifier = Modifier.size(30.dp)
+        Box(modifier = Modifier.size(40.dp)
             .background(Purple)
             .constrainAs(ref = purpleBox4)
             {
